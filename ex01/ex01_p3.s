@@ -1,3 +1,4 @@
+#配列のコピー
       .data 
 N:    .word 10    # The length of Array 
 A:    .word 8     # A[0] = 8 

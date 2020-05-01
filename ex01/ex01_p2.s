@@ -1,3 +1,4 @@
+＃配列の総和計算
         .data 
 N:      .word 10
 A:      .word 8

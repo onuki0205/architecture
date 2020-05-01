@@ -1,3 +1,4 @@
+＃ループの演算
     .data
 A:  .word 19
 B:  .word 75
