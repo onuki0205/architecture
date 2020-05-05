@@ -5,13 +5,14 @@ int main(){
     int n = 10;
     int a[]={8,4,7,12,13,19,23,43,56,32};
     int b[10];
+    int tmp;
 
     for(int i = 0; i < n-1; i++){
 	    for(int j = n-2; j >= i; j--){
-	        if(A[j] > A[j+1]) {
-	            tmp = A[j];
-	            A[j] = A[j+1];
-	            A[j+1] = tmp;
+	        if(a[j] > a[j+1]) {
+	            tmp = a[j];
+	            a[j] = a[j+1];
+	            a[j+1] = tmp;
 	        }
 	    }
     }
