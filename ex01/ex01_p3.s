@@ -1,4 +1,3 @@
-#配列のコピー
       .data 
 N:    .word 10    # The length of Array 
 A:    .word 8     # A[0] = 8 
@@ -14,21 +13,22 @@ A:    .word 8     # A[0] = 8
 B:    .space 40   # 配列B の格納先を確保する。大きさは40バイト(10ワード分)
       .text 
 main: 
-      or  $8,$0,$0
-      lw  $9,N
-      la  $10,A
-      la  $11,B
-      la  $12,0($10)
+      or  $8,$0,$0                  #i=0
+      lw  $9,N                      #Nの値
+      la  $10,A                     #配列Aのアドレス
+      la  $11,B                     #配列Bのアドレス
+      la  $12,0($10)                #配列Aのアドレス
 
       loop:
-            beq  $8, $9, loopend
-            lw   $13,0($12)
-            sw   $13,0($11)   
-            addi $8,$8,1
-            addi $11,$11,4
-            addi $10,$10,4      　 
+            beq  $8, $9, loopend    #$8 == $9 ならば loopend
+            lw   $13,0($12)         #A[0]の値
+            sw   $13,0($11)         #A[0]の値をB[0]に格納
+            addi $8,$8,1            #i++
+            addi $11,$11,4          #配列Bのアドレスずらし
+            addi $10,$10,4          #配列Aのアドレスずらし
             j loop 
       loopend:
 
 
 exit:j exit
+
