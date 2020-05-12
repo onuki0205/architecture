@@ -10,14 +10,17 @@ main:
         lw $t1, A           #乗数の値
         lw $t2, B           #被乗数の値
         lw $t3, C           #積の値
-        lw $t4, N           #計算する分のビット数
-        or $t5, $0          #i=0
+        lw $t4, D           #計算する分のビット数
+        or $t5, $0, $0        #i=0
         addi $t6, $0, 1     #各ビットで1/0をチェックする(チェックビット)
 
 loop:
-        ###各ビットが1/0を判断
         slt $t7, $t5, $t4   #1<N ならば $t7=1
-        beq $t7, $0 loopend #$t7=0 ならば loopend
+        beq $t7, $0 store #$t7=0 ならば loopend
+
+        ###各ビットが1/0を判断
+        and $t8, $t2, $t6   #$t8=$t2+$t6
+        beq $t8, $0 loopend #$t8=0 ならば loopend
 
         add $t3, $t3, $t1   #積をたす
         j loopend
