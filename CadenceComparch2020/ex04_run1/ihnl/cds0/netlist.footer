@@ -1,0 +1,5 @@
+or2  I_8 ( .i0(m1), .o(o), .i1(m0));
+and2b1  I_7 ( .o(m0), .i0(s0), .i1(d0));
+and2  I_9 ( .o(m1), .i0(d1), .i1(s0));
+
+endmodule

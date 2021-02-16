@@ -1,0 +1,65 @@
+
+// timscale directive file
+hdlFilesDir/timescaleF
+
+// Verilog HDL and netlist files of
+// "archi Ex05 schematic"
+
+// HDL models
+
+// HDL file - archi, Ex06, behavioral.
+/home/student/s1260054/CadenceComparch2020/archi/Ex06/behavioral/verilog.v
+
+// HDL file - u_aizu, DataMem, behavioral.
+/home/course/logictut/lib/u_aizu/DataMem/behavioral/verilog.v
+
+// HDL file - u_aizu, LookAheadGen, behavioral.
+/home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v
+
+// HDL file - u_aizu, ALUCtrl, behavioral.
+/home/course/logictut/lib/u_aizu/ALUCtrl/behavioral/verilog.v
+
+// HDL file - u_aizu, Add, behavioral.
+/home/course/logictut/lib/u_aizu/Add/behavioral/verilog.v
+
+// HDL file - u_aizu, InstMem, behavioral.
+/home/course/logictut/lib/u_aizu/InstMem/behavioral/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - xc4000, m2_1, schematic.
+ihnl/cds0/netlist
+// netlist file - xc4000, m2_1e, schematic.
+ihnl/cds1/netlist
+// netlist file - xc4000, m16_1e, schematic.
+ihnl/cds2/netlist
+// netlist file - u_aizu, m32_1, schematic.
+ihnl/cds3/netlist
+// netlist file - xc4000, d4_16e, schematic.
+ihnl/cds4/netlist
+// netlist file - u_aizu, d5_32e, schematic.
+ihnl/cds5/netlist
+// netlist file - u_aizu, RegFile, schematic.
+ihnl/cds6/netlist
+// netlist file - xc4000, m4_1e, schematic.
+ihnl/cds7/netlist
+// netlist file - u_aizu, FA, schematic.
+ihnl/cds8/netlist
+// netlist file - u_aizu, CLA4, schematic.
+ihnl/cds9/netlist
+// netlist file - u_aizu, CLA32, schematic.
+ihnl/cds10/netlist
+// netlist file - xc4000, or8, schematic.
+ihnl/cds11/netlist
+// netlist file - u_aizu, zero_detect, schematic.
+ihnl/cds12/netlist
+// netlist file - u_aizu, ALU, schematic.
+ihnl/cds13/netlist
+// netlist file - archi, Ex05, schematic.
+ihnl/cds14/netlist
+
+
+// End HDL models

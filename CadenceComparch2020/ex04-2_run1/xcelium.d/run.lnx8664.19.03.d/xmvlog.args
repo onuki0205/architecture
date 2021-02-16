@@ -1,0 +1,35 @@
+//
+// File created by:  xmxlmode
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-YDIR
+/home/course/logictut/lib/xc4000/verilog
+-LIBEXT
+.v
+/home/student/s1260054/CadenceComparch2020/ex04-2_run1/testfixture.template
+hdlFilesDir/timescaleF
+ihnl/cds0/netlist
+ihnl/cds1/netlist
+ihnl/cds2/netlist
+ihnl/cds3/netlist
+ihnl/cds4/netlist
+ihnl/cds5/netlist
+ihnl/cds6/netlist
+ihnl/cds7/netlist
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nostdout
+-nocopyright
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.19.03.d/xllibs
+-ALLOWUNBOUND

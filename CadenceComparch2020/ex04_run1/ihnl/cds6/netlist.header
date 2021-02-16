@@ -1,0 +1,18 @@
+// Library - xc4000, Cell - or8, View - schematic
+// LAST TIME SAVED: Jan 25 14:56:59 2012
+// NETLIST TIME: May 26 22:53:58 2020
+`timescale 1ns / 1ns 
+
+module or8 ( o, i0, i1, i2, i3, i4, i5, i6, i7 );
+
+output  o;
+
+input  i0, i1, i2, i3, i4, i5, i6, i7;
+
+
+specify 
+    specparam CDS_LIBNAME  = "xc4000";
+    specparam CDS_CELLNAME = "or8";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

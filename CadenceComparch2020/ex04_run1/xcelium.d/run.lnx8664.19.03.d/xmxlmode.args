@@ -1,0 +1,19 @@
+//
+// File created by:  xmxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
+-y
+/home/course/logictut/lib/xc4000/verilog
++libext+.v
+-l
+simout.tmp
+/home/student/s1260054/CadenceComparch2020/ex04_run1/testfixture.template
+-f
+/home/student/s1260054/CadenceComparch2020/ex04_run1/verilog.inpfiles
++nostdout
++nocopyright
++elaborate
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"

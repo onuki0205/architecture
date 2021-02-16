@@ -1,0 +1,8 @@
+inv  I3 ( .i(s[4]), .o(net36));
+or2  I2 ( .i0(net8), .o(o), .i1(net30));
+m16_1e I0 ( net30, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11,
+     d12, d13, d14, d15, net36, s[0], s[1], s[2], s[3]);
+m16_1e I1 ( net8, d16, d17, d18, d19, d20, d21, d22, d23, d24, d25,
+     d26, d27, d28, d29, d30, d31, s[4], s[0], s[1], s[2], s[3]);
+
+endmodule

@@ -1,0 +1,4 @@
+RegFile I1 ( ReadData1[31:0], ReadData2[31:0], CK, CLR, ReadReg1[4:0],
+     ReadReg2[4:0], WriteData[31:0], WriteEN, WriteReg[4:0]);
+
+endmodule

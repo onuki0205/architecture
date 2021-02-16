@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      s1260054
+HostName                       cadsv192.u-aizu.ac.jp
+ProcessIdentifier              25074
+ProcessCreationTime_UTC        1591625900
+ProcessCreationTime_Readable   Mon Jun  8 23:18:20 2020 JST
+AppIdentifier                  /usr/local/cadence/IC618/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/student/s1260054/CadenceComparch2020/libManager.log
+TimeEditLocked                 Mon Jun  8 23:18:24 2020 JST

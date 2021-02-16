@@ -1,0 +1,45 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "ex04"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/student/s1260054/CadenceComparch2020/ex04_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "B" 31 0  "B" 31 0  )
+( "ALUCode" 3 0  "ALUCode" 3 0  )
+( "A" 31 0  "A" 31 0  )
+( "S" 31 0  "S" 31 0  )
+ )
+( model
+( "xc4000/m2_1/schematic" "m2_1" )
+( "archi/ex04/schematic" "ex04" )
+( "xc4000/m2_1e/schematic" "m2_1e" )
+( "u_aizu/CLA32/schematic" "CLA32" )
+( "u_aizu/FA/schematic" "FA" )
+( "u_aizu/CLA4/schematic" "CLA4" )
+( "xc4000/m4_1e/schematic" "m4_1e" )
+( "u_aizu/ALU/schematic" "ALU" )
+( "xc4000/or8/schematic" "or8" )
+( "u_aizu/zero_detect/schematic" "zero_detect" )
+ )
+( "ex04" "ihnl/cds9/map" )
+( "ALU" "ihnl/cds8/map" )
+( "FA" "ihnl/cds3/map" )
+( "m2_1" "ihnl/cds0/map" )
+( "or8" "ihnl/cds6/map" )
+( "CLA32" "ihnl/cds5/map" )
+( "m2_1e" "ihnl/cds1/map" )
+( "CLA4" "ihnl/cds4/map" )
+( "zero_detect" "ihnl/cds7/map" )
+( "m4_1e" "ihnl/cds2/map" )
+ )

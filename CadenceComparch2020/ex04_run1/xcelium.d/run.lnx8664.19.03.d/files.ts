@@ -1,0 +1,13 @@
+1487902241 /home/course/logictut/lib/cds.lib
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/testfixture.template
+1522117474 /home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v
+1590501237 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds0/netlist
+1590501237 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds1/netlist
+1590501237 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds2/netlist
+1590501237 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds3/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds4/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds5/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds6/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds7/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds8/netlist
+1590501238 /home/student/s1260054/CadenceComparch2020/ex04_run1/ihnl/cds9/netlist

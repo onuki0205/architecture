@@ -1,0 +1,12 @@
+CADENCE IHNL111410
+
+xc4000 m2_1 schematic cds0
+xc4000 m2_1e schematic cds1
+xc4000 m4_1e schematic cds2
+u_aizu FA schematic cds3
+u_aizu CLA4 schematic cds4
+u_aizu CLA32 schematic cds5
+xc4000 or8 schematic cds6
+u_aizu zero_detect schematic cds7
+u_aizu ALU schematic cds8
+archi ex04 schematic cds9

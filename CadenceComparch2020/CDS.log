@@ -1,0 +1,397 @@
+\# Program start time:     UTC 2020.06.08 14:18:16.615
+\# Local time: JST (UTC+09:00) 2020.06.08 23:18:16.615
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 10/08/2019 20:07 (sjfhw316) $
+\o Hierarchy:		/usr/local/cadence/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.7  (64-bit addresses)
+\# Command line:	/usr/local/cadence/IC618/tools/dfII/bin/64bit/virtuoso -log /home/student/s1260054/CadenceComparch2020/CDS.log
+\# Host name (type):	cadsv192 (x86_64)
+\# Operating system:	Linux 3.10.0-1127.8.2.el7.x86_64 #1 SMP Thu May 7 19:30:37 EDT 2020
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	localhost:13.0 (1024x768)
+\# Available geometry:			TL(0:28) BR(1023:733)
+\# X server:			Oracle Corporation, based on X.Org Foundation sources
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12003000)
+\# X resource pool:	base 0x2e00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        533 MB
+\# Available memory:	    367,329 MB
+\# System memory:	    390,762 MB
+\# Maximum memory size:	    390,401 MB
+\# Max mem available:	    367,500 MB
+\# Initial memory used:	        172 MB
+\#        process size:	      1,608 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 56.00/56.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		s1260054
+\o Working Directory:	cadsv192:/home/student/s1260054/CadenceComparch2020
+\# Process Id:		24831
+\o 
+\o COPYRIGHT (C) 1992-2019  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2019  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading cli.cxt 
+\o Loading cle.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.07s.
+\p > 
+\# Memory report: using         300 MB, process size 1,897 MB at UTC 2020.06.08 14:18:19.111
+\a _treeSetOpcGUI(t)
+\r t
+\a ddsOpenLibManager()
+\r t
+\# Available memory:        367,206 MB at UTC 2020.06.08 14:18:27.532
+\# Memory report: Maximum memory size now 367,508 MB at UTC 2020.06.08 14:18:27.532
+\# Thread usage report: 59 active threads, active load 1.00 at UTC 2020.06.08 14:18:27.532
+\i ddsServOpen("archi" "Ex05" "schematic" "edit" nil)
+\# Displaying modal dbox "_icLicLicenseQuestionDBox", title "Next License"
+\p > 
+\a hiDBoxUser(_icLicLicenseQuestionDBox nil 1)
+\r t
+\o INFO (TECH-150003): The technology database "basic" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\o Loading schematic.cxt 
+\o Loading ddui.cxt 
+\o Loading vb.cxt 
+\o Loading nt.cxt 
+\o Loading oi.cxt 
+\o Loading see.cxt 
+\o Loading treeAssistant.cxt 
+\o Loading asst.cxt 
+\o Loading le.cxt 
+\o Loading drdEdit.cxt 
+\o INFO (TECH-150003): The technology database "US_8ths" has been automatically
+\o updated from revision 226610(DM 0) to revision 227612(DM 3) in virtual memory.
+\a _treeNavActivateOpc(dwindow('treeAssistant1) "Groups/Cells")
+\r t
+\o Loading hsm.cxt 
+\o Loading lx.cxt 
+\o Loading lce.cxt 
+\o Loading rte.cxt 
+\o Loading oasis.cxt 
+\o Loading simui.cxt 
+\a when(dwindow('oiAssistant1) hiMapWindow(dwindow('oiAssistant1)))
+\r t
+\a hiResizeWindow(swindow(1) list(0:34 1024:703))
+\r t
+\a when(dwindow('treeAssistant1) hiMapWindow(dwindow('treeAssistant1)))
+\r t
+\# Thread usage report: 57 active threads, active load 1.00 at UTC 2020.06.08 14:18:37.532
+\a _deUpdateMenu('schematicTools 2)
+\r t
+\a schematicTools->PluginSlider->\&Simulation2->NCVerToolboxPlugin->checked=t
+\o Loading verilogI.cxt 
+\o Loading verilogNet.cxt 
+\r t
+\a vlogifNCInitDesign()
+\o Loading seCore.cxt 
+\o *** Loading .simrc from -> /home/student/s1260054/CadenceComparch2020/.simrc.
+\r t
+\a vlogifNCNetlist()
+\# Displaying modal dbox "reNetlistDBox", title "Renetlist Design"
+\p > 
+\a hiDBoxOK(reNetlistDBox)
+\r t
+\o 
+\o Running netlist
+\o Begin Incremental Netlisting Jun  8 23:19:06 2020
+\o INFO (VLOGNET-188): While generating implicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Honor Switch Master'.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'honorSM'.
+\o This option automatically resolves any mismatch between the terminals of an instance and its switch master while generating an implicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-66): Module ports will be printed without the port ranges. If you have split busses 
+\o across module ports you may get an incorrect netlist. To print module ports 
+\o with the port ranges, set simVerilogDropPortRange = nil either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-120): Using connection by order (implicit connections) for all the stopping cells.
+\o 
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'archi', cell 'Ex06', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("RegDst" "Jump" "Branch" "MemRead" "MemtoReg" "ALUOp<1:0>" "MemWrite" "ALUSrc" "RegWrite" 
+\o      "OpCode<5:0>") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'u_aizu', cell 'DataMem', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO<31:0>" "ADR<31:0>" "DI<31:0>" "WRITE" "READ" "CLK")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'u_aizu', cell 'LookAheadGen', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("C0" "P0" "G0" "P1" "G1" "P2" "G2" "P3" "G3" "C1" "C2" "C3" "C4") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'u_aizu', cell 'ALUCtrl', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("ALUOp<1:0>" "Opcode<5:0>" "Funct<5:0>" "ALUCode<3:0>")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'u_aizu', cell 'Add', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("A<31:0>" "B<31:0>" "Out<31:0>")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'u_aizu', cell 'InstMem', view 'behavioral' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO<31:0>" "ADR<31:0>")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o                 (incremental data only)
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o fdce                        symbol               *Stopping View*  
+\o InstMem                     behavioral           *Stopping View*  
+\o Add                         behavioral           *Stopping View*  
+\o or2                         symbol               *Stopping View*  
+\o and2b1                      symbol               *Stopping View*  
+\o and2                        symbol               *Stopping View*  
+\o inv                         symbol               *Stopping View*  
+\o and3                        symbol               *Stopping View*  
+\o and3b1                      symbol               *Stopping View*  
+\o and5                        symbol               *Stopping View*  
+\o and5b4                      symbol               *Stopping View*  
+\o and5b2                      symbol               *Stopping View*  
+\o and5b1                      symbol               *Stopping View*  
+\o and5b3                      symbol               *Stopping View*  
+\o xgnd                        symbol               *Stopping View*  
+\o ALUCtrl                     behavioral           *Stopping View*  
+\o xvcc                        symbol               *Stopping View*  
+\o xor2                        symbol               *Stopping View*  
+\o LookAheadGen                behavioral           *Stopping View*  
+\o nor4                        symbol               *Stopping View*  
+\o or3                         symbol               *Stopping View*  
+\o or4                         symbol               *Stopping View*  
+\o DataMem                     behavioral           *Stopping View*  
+\o Ex06                        behavioral           *Stopping View*  
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'archi', cell 'Ex05', and view 'schematic' has been netlisted successfully.
+\o 
+\o End netlisting Jun  8 23:19:07 2020
+\r t
+\a hiDisplayForm(vlogifViewNetlistRunFile)
+\p > 
+\a hiiSetCurrentForm('vlVicifViewNetlistRunFile)
+\r t
+\a vlVicifViewNetlistRunFile->vlVicNetlistRunLibList->value= '( "u_aizu" )
+\r ("u_aizu")
+\a vlVicifViewNetlistRunFile->vlVicNetlistRunLibList->value= '( "archi" )
+\r ("archi")
+\a vlVicifViewNetlistRunFile->vlVicNetlistRunCellList->value= '( "Ex05" )
+\r ("Ex05")
+\a hiFormDone(vlVicifViewNetlistRunFile)
+\r t
+\r t
+\a _vlVicTFForm()
+\p > 
+\a hiiSetCurrentForm('vlVicTestFixtureForm)
+\r t
+\a _vlVicTFEditIconCbk("Stimulus")
+\r nil
+\a hiFormCancel(vlVicTestFixtureForm) 
+\r t
+\r nil
+\a _vlVicTFForm()
+\p > 
+\a _vlVicTFCheckSyntaxCbk("Stimulus")
+\o INFO (VLOGUI-70): Analyzing the '/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog' Verilog file.
+\# Displaying modal dbox "ncVanErrorDBox", title "Syntax Check Failed"
+\p > 
+\a hiDBoxOK(ncVanErrorDBox)
+\r t
+\r nil
+\a hiResizeWindow(window(4) list(20:291 946:703))
+\r t
+\a hiResizeWindow(window(4) list(20:165 933:703))
+\r t
+\a hiCloseWindow(window(4))
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\a hiFormDone(vlVicTestFixtureForm)
+\r t
+\r t
+\a _vlVicTFForm()
+\p > 
+\a _vlVicTFCheckSyntaxCbk("Stimulus")
+\o INFO (VLOGUI-70): Analyzing the '/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog' Verilog file.
+\# Displaying modal dbox "ncVanErrorDBox", title "Syntax Check Failed"
+\p > 
+\a hiDBoxOK(ncVanErrorDBox)
+\r t
+\r nil
+\a hiResizeWindow(window(5) list(20:34 1024:703))
+\r t
+\a hiCloseWindow(window(5))
+\r t
+\a _hiSetCurrentWinNum(3)
+\r t
+\a hiFormDone(vlVicTestFixtureForm)
+\r t
+\r t
+\a _vlVicTFForm()
+\p > 
+\a _vlVicTFCheckSyntaxCbk("Stimulus")
+\o INFO (VLOGUI-70): Analyzing the '/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog' Verilog file.
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Edit Test Fixture"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r nil
+\a hiFormDone(vlVicTestFixtureForm)
+\r t
+\r t
+\a vtoolsIseRunNCSimulation()
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Top Scope Mismatch"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r t
+\a vtoolsIseRunNCSimulation()
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Top Scope Mismatch"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schSingleSelectPt()
+\i 18.9375:0.6875
+\o Loading apAssist.cxt 
+\r nil
+\a hiSetCurrentWindow(window(3))
+\r t
+\a _vlVicTFForm()
+\p > 
+\a _vlVicTFCheckSyntaxCbk("Stimulus")
+\o INFO (VLOGUI-70): Analyzing the '/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog' Verilog file.
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Edit Test Fixture"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r nil
+\a hiFormDone(vlVicTestFixtureForm)
+\r t
+\r t
+\a vtoolsIseRunNCSimulation()
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Top Scope Mismatch"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schSingleSelectPt()
+\i 21:8.25
+\r nil
+\a hiSetCurrentWindow(window(3))
+\r t
+\a _vlVicTFForm()
+\p > 
+\a _vlVicTFCheckSyntaxCbk("Stimulus")
+\o INFO (VLOGUI-70): Analyzing the '/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.verilog' Verilog file.
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Edit Test Fixture"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r nil
+\a hiFormDone(vlVicTestFixtureForm)
+\r t
+\r t
+\a vtoolsIseRunNCSimulation()
+\# Displaying modal dbox "_verilogIEmsIssueMsgDialogBox", title "Top Scope Mismatch"
+\p > 
+\a hiDBoxOK(_verilogIEmsIssueMsgDialogBox)
+\r t
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schSingleSelectPt()
+\i 21.0625:6.125
+\r nil
+\a _deCloseSessionWindow()
+\o Loading cph.cxt 
+\r t
+\# Memory report: using         519 MB, process size 2,099 MB at UTC 2020.06.08 15:44:47.025
+\o INFO (DB-170018): (dbPanic) dumping stack
+\o libvirtuos_sh.so:voStackTrace+73()
+\o virtuoso:dbPanic+962()
+\o libvirtuos_sh.so:voDoAbortFuncs+76()
+\o libvirtuos_sh.so:voSigAbortInfo+255()
+\o libpthread.so.0:__restore_rt+0()
+\o libc.so.6:__poll+45()
+\o libglib-2.0.so.0:+6862023()
+\o libglib-2.0.so.0:g_main_context_iteration+44()
+\o libcdsQt5Core.so.5:_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+95()
+\o virtuoso:hiiFillCIWInPortCB+1627()
+\o libil_sh.so:iliBGetc+68()
+\o libil_sh.so:ilGetCharPort+111()
+\o libil_sh.so:_Z12ilFillBufferPcPmiPv+265()
+\o libil_sh.so:_Z7ilyylexP9ILYYSTYPEP9ILYYLTYPEPv+23906()
+\o libil_sh.so:_Z9ilyyparsePvP18iltLocalParserData+2549()
+\o libil_sh.so:ilParserReent+49()
+\o libil_sh.so:ilReadport+537()
+\o libil_sh.so:iliTopLevel+351()
+\o virtuoso:hiMainLoop+1112()
+\o virtuoso:_ZN3rde15startHiMainLoopEv+6044()
+\o virtuoso:Tcl_MainEx+1459()
+\o virtuoso:_ZN17TclCommandAdaptor8mainLoopEiPPcPKcRKSt6vectorI9ctuStringSaIS5_EEPFvvE+520()
+\o virtuoso:_Z11finaleEntryiPPcPKcbP16finaleAppHarness+4684()
+\o virtuoso:_Z12rdeStartMainiPPc+43()
+\o virtuoso:main+933()
+\o libc.so.6:__libc_start_main+245()
+\o virtuoso:_start+41()
+\w *WARNING* Process was terminated by USER with SIGTERM signal
+\o Local time (crash) Tuesday 09 June 2020, 12:44:47 AM

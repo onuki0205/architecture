@@ -1,0 +1,33 @@
+// Library - u_aizu, Cell - ALU, View - schematic
+// LAST TIME SAVED: Mar 27 19:15:42 2018
+// NETLIST TIME: May 26 22:53:58 2020
+`timescale 1ns / 1ns 
+
+module ALU ( S, Zero, A, ALUCode, B );
+
+output  Zero;
+
+
+output [31:0]  S;
+
+input [31:0]  A;
+input [31:0]  B;
+input [3:0]  ALUCode;
+
+// Buses in the design
+
+wire  [31:0]  addsub;
+
+wire  [0:31]  net16;
+
+wire  [0:31]  net12;
+
+wire  [0:31]  net019;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "ALU";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -1,0 +1,85 @@
+// Library - archi, Cell - Ex05, View - schematic
+// LAST TIME SAVED: Jun  5 11:23:42 2020
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module Ex05 ( CK, CLR );
+
+input  CK, CLR;
+
+// Buses in the design
+
+wire  [31:0]  WD;
+
+wire  [31:0]  ALUResult;
+
+wire  [4:0]  WriteReg;
+
+wire  [31:0]  ReadData2;
+
+wire  [3:0]  ALUCode;
+
+wire  [31:0]  DO;
+
+wire  [0:31]  net039;
+
+wire  [31:0]  PC;
+
+wire  [31:0]  B;
+
+wire  [1:0]  ALUOp;
+
+wire  [31:0]  a;
+
+wire  [0:31]  net032;
+
+wire  [0:31]  net036;
+
+wire  [31:0]  Out;
+
+wire  [31:0]  ReadData1;
+
+
+specify 
+    specparam CDS_LIBNAME  = "archi";
+    specparam CDS_CELLNAME = "Ex05";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+fdce  I0[31:0] ( .q(PC[31:0]), .c(CK), .ce(one), .clr(CLR),
+     .d(net032[0:31]));
+InstMem I1 ( a[31:0], PC[31:0]);
+Add I14 ( Out[31:0], {a[15], a[15], a[15], a[15], a[15], a[15], a[15],
+     a[15], a[15], a[15], a[15], a[15], a[15], a[15], a[15:0], zero,
+     zero}, net036[0:31]);
+Add I3 ( PC[31:0], {zero, zero, zero, zero, zero, zero, zero, zero,
+     zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero,
+     zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, one,
+     zero, zero}, Out[31:0]);
+m2_1 I4[4:0] ( WriteReg[4:0], a[20:16], a[15:11], RegDst);
+m2_1 I12[31:0] ( net039[0:31], Out[31:0], net036[0:31], net028);
+m2_1 I13[31:0] ( net032[0:31], net039[0:31], {PC[31], PC[30], PC[29],
+     PC[28], a[25], a[24], a[23], a[22], a[21], a[20], a[19], a[18],
+     a[17], a[16], a[15], a[14], a[13], a[12], a[11], a[10], a[9],
+     a[8], a[7], a[6], a[5], a[4], a[3], a[2], a[1], a[0], zero, zero},
+     Jump);
+m2_1 I10[31:0] ( WD[31:0], ALUResult[31:0], DO[31:0], MemtoReg);
+m2_1 I5[31:0] ( B[31:0], ReadData2[31:0], {a[15], a[15], a[15], a[15],
+     a[15], a[15], a[15], a[15], a[15], a[15], a[15], a[15], a[15],
+     a[15], a[15], a[15], a[15], a[14], a[13], a[12], a[11], a[10],
+     a[9], a[8], a[7], a[6], a[5], a[4], a[3], a[2], a[1], a[0]},
+     ALUSrc);
+RegFile I6 ( ReadData1[31:0], ReadData2[31:0], CK, CLR, a[25:21],
+     a[20:16], WD[31:0], RegWrite, WriteReg[4:0]);
+ALUCtrl I7 ( ALUOp[1:0], a[31:26], a[5:0], ALUCode[3:0]);
+ALU I8 ( ALUResult[31:0], ALU_zero, ReadData1[31:0], ALUCode[3:0],
+     B[31:0]);
+DataMem I9 ( DO[31:0], ALUResult[31:0], ReadData2[31:0], MemWrite,
+     MemRead, CK);
+and2  I11 ( .i1(Branch), .i0(ALU_zero), .o(net028));
+Ex06 I15 ( RegDst, Jump, Branch, MemRead, MemtoReg, ALUOp[1:0],
+     MemWrite, ALUSrc, RegWrite, a[31:26]);
+xvcc  I16 ( .power(one));
+xgnd  I17 ( .ground(zero));
+
+endmodule

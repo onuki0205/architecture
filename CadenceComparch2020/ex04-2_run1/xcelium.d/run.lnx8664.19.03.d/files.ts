@@ -1,0 +1,11 @@
+1487902241 /home/course/logictut/lib/cds.lib
+1590507561 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/testfixture.template
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds0/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds1/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds2/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds3/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds4/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds5/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds6/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/ihnl/cds7/netlist
+1590585697 /home/student/s1260054/CadenceComparch2020/ex04-2_run1/hdlFilesDir/timescaleF

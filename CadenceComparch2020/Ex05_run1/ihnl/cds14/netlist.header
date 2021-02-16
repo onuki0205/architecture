@@ -1,0 +1,48 @@
+// Library - archi, Cell - Ex05, View - schematic
+// LAST TIME SAVED: Jun  5 11:23:42 2020
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module Ex05 ( CK, CLR );
+
+input  CK, CLR;
+
+// Buses in the design
+
+wire  [31:0]  WD;
+
+wire  [31:0]  ALUResult;
+
+wire  [4:0]  WriteReg;
+
+wire  [31:0]  ReadData2;
+
+wire  [3:0]  ALUCode;
+
+wire  [31:0]  DO;
+
+wire  [0:31]  net039;
+
+wire  [31:0]  PC;
+
+wire  [31:0]  B;
+
+wire  [1:0]  ALUOp;
+
+wire  [31:0]  a;
+
+wire  [0:31]  net032;
+
+wire  [0:31]  net036;
+
+wire  [31:0]  Out;
+
+wire  [31:0]  ReadData1;
+
+
+specify 
+    specparam CDS_LIBNAME  = "archi";
+    specparam CDS_CELLNAME = "Ex05";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

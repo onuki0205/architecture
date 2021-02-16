@@ -1,0 +1,32 @@
+// Library - u_aizu, Cell - CLA32, View - schematic
+// LAST TIME SAVED: Mar 27 11:28:48 2018
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module CLA32 ( S, A, B, Cin );
+
+
+input  Cin;
+
+output [31:0]  S;
+
+input [31:0]  A;
+input [31:0]  B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "CLA32";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+CLA4 I7 ( net21, S[31:28], A[31:28], B[31:28], net19);
+CLA4 I6 ( net19, S[27:24], A[27:24], B[27:24], net13);
+CLA4 I5 ( net13, S[23:20], A[23:20], B[23:20], net14);
+CLA4 I4 ( net14, S[19:16], A[19:16], B[19:16], net15);
+CLA4 I3 ( net15, S[15:12], A[15:12], B[15:12], net16);
+CLA4 I2 ( net16, S[11:8], A[11:8], B[11:8], net17);
+CLA4 I1 ( net17, S[7:4], A[7:4], B[7:4], net18);
+CLA4 I0 ( net18, S[3:0], A[3:0], B[3:0], Cin);
+
+endmodule

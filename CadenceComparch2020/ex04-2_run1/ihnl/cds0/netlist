@@ -1,0 +1,23 @@
+// Library - xc4000, Cell - m2_1e, View - schematic
+// LAST TIME SAVED: Jan 25 14:56:44 2012
+// NETLIST TIME: May 27 22:21:37 2020
+`timescale 1ns / 1ns 
+
+module m2_1e ( o, d0, d1, e, s0 );
+
+output  o;
+
+input  d0, d1, e, s0;
+
+
+specify 
+    specparam CDS_LIBNAME  = "xc4000";
+    specparam CDS_CELLNAME = "m2_1e";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+or2  I_38 ( .i0(m1), .o(o), .i1(m0));
+and3  I_30 ( .i0(d1), .o(m1), .i2(s0), .i1(e));
+and3b1  I_31 ( .i0(s0), .i1(e), .i2(d0), .o(m0));
+
+endmodule

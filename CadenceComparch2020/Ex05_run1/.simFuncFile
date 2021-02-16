@@ -1,0 +1,19 @@
+simFuncDPLList = '((nil libName "archi" cellName "Ex06"
+    viewName "behavioral" filePath "/home/student/s1260054/CadenceComparch2020/archi/Ex06/behavioral/verilog.v"
+    ) 
+    (nil libName "u_aizu" cellName "DataMem"
+    viewName "behavioral" filePath "/home/course/logictut/lib/u_aizu/DataMem/behavioral/verilog.v"
+    ) 
+    (nil libName "u_aizu" cellName "LookAheadGen"
+    viewName "behavioral" filePath "/home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v"
+    ) 
+    (nil libName "u_aizu" cellName "ALUCtrl"
+    viewName "behavioral" filePath "/home/course/logictut/lib/u_aizu/ALUCtrl/behavioral/verilog.v"
+    ) 
+    (nil libName "u_aizu" cellName "Add"
+    viewName "behavioral" filePath "/home/course/logictut/lib/u_aizu/Add/behavioral/verilog.v"
+    )
+    (nil libName "u_aizu" cellName "InstMem"
+    viewName "behavioral" filePath "/home/course/logictut/lib/u_aizu/InstMem/behavioral/verilog.v"
+    )
+)

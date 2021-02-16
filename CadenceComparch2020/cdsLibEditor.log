@@ -1,0 +1,21 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 09/03/2019 21:38 (ip-172-18-22-89) $
+\o Sub version:		sub-version  s061 
+\o Arguments:		-cdslib /home/course/logictut/lib/cds.lib -mpssession virtuoso48849 -mpshost cadsv192 
+\o Working Directory:	cadsv192:/home/student/s1260054/CadenceComparch2020
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\o WARNING (CLE-120): The file "/home/course/logictut/lib/cds.lib" is read only. 
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(cdsLibEditor list(0 28 500 400))
+\a nrResizeWindow(errorDialog list(72 167 357 122))
+\a nrSetCurrentWindow(errorDialog)
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "cdsDefTechLib"
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(errorDialog list(72 130 357 122))
+\a cdsLibEditor->fileExitButton->value = t
+\a exit(0)

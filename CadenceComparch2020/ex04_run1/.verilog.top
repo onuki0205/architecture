@@ -1,0 +1,19 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Zero;
+
+
+wire [31:0]  S;
+
+reg [31:0]  A;
+reg [3:0]  ALUCode;
+reg [31:0]  B;
+
+
+
+ex04 top(S, Zero, A, ALUCode, B); 
+ 

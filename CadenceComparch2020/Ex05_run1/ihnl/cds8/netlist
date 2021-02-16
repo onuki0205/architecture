@@ -1,0 +1,23 @@
+// Library - u_aizu, Cell - FA, View - schematic
+// LAST TIME SAVED: Apr  9 10:42:48 2013
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module FA ( G, P, S, A, B, Cin );
+
+output  G, P, S;
+
+input  A, B, Cin;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "FA";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+and2  I1 ( .o(G), .i0(B), .i1(A));
+xor2  I0 ( .i1(A), .o(P), .i0(B));
+xor2  I2 ( .i1(P), .o(S), .i0(Cin));
+
+endmodule

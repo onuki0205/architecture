@@ -1,0 +1,42 @@
+//
+// File created by:  xmxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++libext+.v
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/ex04-2_run1/.simTmpNCCmd "
++mpssession+virtuoso52860
++mpshost+cadsv192
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/home/student/s1260054/CadenceComparch2020/ex04-2_run1/.simTmpNCCmd
+-MPSSESSION
+virtuoso52860
+-MPSHOST
+cadsv192
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1590585988
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.19.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.19.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.19.03.d/hdl.var
+-XLNAME
+xmxlmode
+-XLVERSION
+"TOOL:	xmxlmode	19.03-s013"

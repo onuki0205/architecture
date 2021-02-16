@@ -1,0 +1,9 @@
+and2  I4 ( .o(net087), .i0(e), .i1(a[4]));
+and2  I3 ( .o(net084), .i0(e), .i1(net4));
+inv  I2 ( .i(a[4]), .o(net4));
+d4_16e I0 ( d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13,
+     d14, d15, a[0], a[1], a[2], a[3], net084);
+d4_16e I1 ( d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27,
+     d28, d29, d30, d31, a[0], a[1], a[2], a[3], net087);
+
+endmodule

@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  Zero;
+
+
+wire [31:0]  S;
+
+reg [31:0]  A;
+reg [3:0]  ALUCode;
+reg [31:0]  B;
+
+
+
+ex04 top(S, Zero, A, ALUCode, B); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/student/s1260054/CadenceComparch2020/ex04_run1/testfixture.verilog file
+`include "/home/student/s1260054/CadenceComparch2020/ex04_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

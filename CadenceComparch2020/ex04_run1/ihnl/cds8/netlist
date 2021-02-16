@@ -1,0 +1,47 @@
+// Library - u_aizu, Cell - ALU, View - schematic
+// LAST TIME SAVED: Mar 27 19:15:42 2018
+// NETLIST TIME: May 26 22:53:58 2020
+`timescale 1ns / 1ns 
+
+module ALU ( S, Zero, A, ALUCode, B );
+
+output  Zero;
+
+
+output [31:0]  S;
+
+input [31:0]  A;
+input [31:0]  B;
+input [3:0]  ALUCode;
+
+// Buses in the design
+
+wire  [31:0]  addsub;
+
+wire  [0:31]  net16;
+
+wire  [0:31]  net12;
+
+wire  [0:31]  net019;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "ALU";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+xgnd  I5 ( .ground(zero));
+xvcc  I4 ( .power(net10));
+or2  I3[31:0] ( .o(net12[0:31]), .i0(B[31:0]), .i1(A[31:0]));
+and2  I2[31:0] ( .o(net16[0:31]), .i0(B[31:0]), .i1(A[31:0]));
+m4_1e I0[31:0] ( S[31:0], net16[0:31], net12[0:31], addsub[31:0],
+     {zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero,
+     zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero,
+     zero, zero, zero, zero, zero, zero, zero, zero, zero, addsub[31]},
+     net10, ALUCode[0], ALUCode[1]);
+xor2  I9[31:0] ( .o(net019[0:31]), .i0(ALUCode[2]), .i1(B[31:0]));
+CLA32 I8 ( addsub[31:0], A[31:0], net019[0:31], ALUCode[2]);
+zero_detect I11 ( Zero, S[31:0]);
+
+endmodule

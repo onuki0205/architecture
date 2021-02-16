@@ -1,0 +1,49 @@
+TOOL:	xmxlmode	19.03-s013: Started on May 26, 2020 at 23:01:20 JST
+xmxlmode
+	+delay_mode_path
+	+typdelays
+	-y
+	/home/course/logictut/lib/xc4000/verilog
+	+libext+.v
+	-l
+	simout.tmp
+	/home/student/s1260054/CadenceComparch2020/ex04_run1/testfixture.template
+	-f /home/student/s1260054/CadenceComparch2020/ex04_run1/verilog.inpfiles
+		/home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/ex04_run1/.simTmpNCCmd "
+	+mpssession+virtuoso57246
+	+mpshost+cadsv192
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncvlogargs+ -neverwarn -nostdout -nocopyright ) is deprecated. Use (+xmvlogargs+ -neverwarn -nostdout -nocopyright ) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) is deprecated. Use (+xmelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/ex04_run1/.simTmpNCCmd ) is deprecated. Use (+xmsimargs+ -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/ex04_run1/.simTmpNCCmd ) instead.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cadence/XCELIUM1903/tools/xcelium/files/xmsimrc
+xcelium> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+xcelium> probe -create -shm test  -all   -depth 1
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 7500 NS + 0
+./testfixture.verilog:141 $finish;
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> ^C
+xcelium> exit
+TOOL:	xmxlmode	19.03-s013: Exiting on May 26, 2020 at 23:17:40 JST  (total: 00:16:20)

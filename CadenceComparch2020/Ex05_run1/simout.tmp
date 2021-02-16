@@ -1,0 +1,70 @@
+TOOL:	xmxlmode	19.03-s013: Started on Jun 09, 2020 at 00:37:15 JST
+xmxlmode
+	+delay_mode_path
+	+typdelays
+	-y
+	/home/course/logictut/lib/xc4000/verilog
+	+libext+.v
+	-l
+	simout.tmp
+	/home/student/s1260054/CadenceComparch2020/Ex05_run1/testfixture.template
+	-f /home/student/s1260054/CadenceComparch2020/Ex05_run1/verilog.inpfiles
+		hdlFilesDir/timescaleF
+		/home/student/s1260054/CadenceComparch2020/archi/Ex06/behavioral/verilog.v
+		/home/course/logictut/lib/u_aizu/DataMem/behavioral/verilog.v
+		/home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v
+		/home/course/logictut/lib/u_aizu/ALUCtrl/behavioral/verilog.v
+		/home/course/logictut/lib/u_aizu/Add/behavioral/verilog.v
+		/home/course/logictut/lib/u_aizu/InstMem/behavioral/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+		ihnl/cds5/netlist
+		ihnl/cds6/netlist
+		ihnl/cds7/netlist
+		ihnl/cds8/netlist
+		ihnl/cds9/netlist
+		ihnl/cds10/netlist
+		ihnl/cds11/netlist
+		ihnl/cds12/netlist
+		ihnl/cds13/netlist
+		ihnl/cds14/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/Ex05_run1/.simTmpNCCmd "
+	+mpssession+virtuoso24831
+	+mpshost+cadsv192
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncvlogargs+ -neverwarn -nostdout -nocopyright ) is deprecated. Use (+xmvlogargs+ -neverwarn -nostdout -nocopyright ) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) is deprecated. Use (+xmelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright) instead.
+xmxlmode: *W,OPDEPRREN: Command Line Option (+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/Ex05_run1/.simTmpNCCmd ) is deprecated. Use (+xmsimargs+ -neverwarn  -nocopyright -gui -input /home/student/s1260054/CadenceComparch2020/Ex05_run1/.simTmpNCCmd ) instead.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/local/cadence/XCELIUM1903/tools/xcelium/files/xmsimrc
+xcelium> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+xcelium> probe -create -shm test  -all   -depth 1
+Created probe 1
+xcelium> probe -create -shm test.top.ALUCode test.top.ALUOp test.top.ALUResult test.top.ALUSrc test.top.ALU_zero test.top.B test.top.Branch test.top.CK test.top.CLR test.top.DO test.top.Jump test.top.MemRead test.top.MemWrite test.top.MemtoReg test.top.Out test.top.PC test.top.ReadData1 test.top.ReadData2 test.top.RegDst test.top.RegWrite test.top.WD test.top.WriteReg test.top.a test.top.net028 test.top.net032 test.top.net036 test.top.net039 test.top.one test.top.zero
+Created probe 2
+xcelium> run
+A[0] =          8
+A[1] =          4
+A[2] =          7
+A[3] =         12
+A[4] =         13
+A[5] =         19
+A[6] =         23
+A[7] =         43
+A[8] =         56
+A[9] =         32
+Simulation complete via $finish(1) at time 20110 NS + 0
+./testfixture.verilog:63   $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmxlmode	19.03-s013: Exiting on Jun 09, 2020 at 00:44:33 JST  (total: 00:07:18)

@@ -1,0 +1,22 @@
+// Library - u_aizu, Cell - CLA32, View - schematic
+// LAST TIME SAVED: Mar 27 11:28:48 2018
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module CLA32 ( S, A, B, Cin );
+
+
+input  Cin;
+
+output [31:0]  S;
+
+input [31:0]  A;
+input [31:0]  B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "CLA32";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

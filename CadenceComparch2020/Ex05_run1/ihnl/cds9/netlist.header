@@ -1,0 +1,23 @@
+// Library - u_aizu, Cell - CLA4, View - schematic
+// LAST TIME SAVED: Mar 27 17:44:23 2018
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module CLA4 ( Cout, S, A, B, Cin );
+
+output  Cout;
+
+input  Cin;
+
+output [3:0]  S;
+
+input [3:0]  A;
+input [3:0]  B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "CLA4";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

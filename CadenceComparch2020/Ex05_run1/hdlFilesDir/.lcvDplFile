@@ -1,0 +1,74 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
+    cellName "fdce" libName "xc4000"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "InstMem" libName "u_aizu"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "Add" libName "u_aizu"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or2" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and2b1" libName "xc4000"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and2" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "inv" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and3" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and3b1" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and5" libName "xc4000"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and5b4" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and5b2" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and5b1" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and5b3" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xgnd" libName "xc4000"
+    )
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "ALUCtrl" libName "u_aizu"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xvcc" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xor2" libName "xc4000"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "LookAheadGen" libName "u_aizu"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "nor4" libName "xc4000"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or3" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or4" libName "xc4000"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "DataMem" libName "u_aizu"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "Ex06" libName "archi"
+    )
+)
+xxxInternalGlobAliasList = '(nil)

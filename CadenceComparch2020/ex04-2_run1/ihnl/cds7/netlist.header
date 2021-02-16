@@ -1,0 +1,26 @@
+// Library - archi, Cell - ex04-2, View - schematic
+// LAST TIME SAVED: May 27 00:38:33 2020
+// NETLIST TIME: May 27 22:21:37 2020
+`timescale 1ns / 1ns 
+
+module cdsModule_0 ( ReadData1, ReadData2, CK, CLR, ReadReg1, ReadReg2,
+     WriteData, WriteEN, WriteReg );
+
+
+input  CK, CLR, WriteEN;
+
+output [31:0]  ReadData1;
+output [31:0]  ReadData2;
+
+input [31:0]  WriteData;
+input [4:0]  WriteReg;
+input [4:0]  ReadReg2;
+input [4:0]  ReadReg1;
+
+
+specify 
+    specparam CDS_LIBNAME  = "archi";
+    specparam CDS_CELLNAME = "ex04-2";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

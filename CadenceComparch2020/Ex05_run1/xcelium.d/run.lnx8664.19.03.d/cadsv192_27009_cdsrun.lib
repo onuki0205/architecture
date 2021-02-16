@@ -1,0 +1,2 @@
+include ../../../../../../course/logictut/lib/cds.lib
+define worklib ../worklib

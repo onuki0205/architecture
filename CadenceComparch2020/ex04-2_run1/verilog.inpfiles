@@ -1,0 +1,28 @@
+
+// timscale directive file
+hdlFilesDir/timescaleF
+
+// Verilog HDL and netlist files of
+// "archi ex04-2 schematic"
+
+// Netlisted models
+
+// netlist file - xc4000, m2_1e, schematic.
+ihnl/cds0/netlist
+// netlist file - xc4000, m2_1, schematic.
+ihnl/cds1/netlist
+// netlist file - xc4000, m16_1e, schematic.
+ihnl/cds2/netlist
+// netlist file - u_aizu, m32_1, schematic.
+ihnl/cds3/netlist
+// netlist file - xc4000, d4_16e, schematic.
+ihnl/cds4/netlist
+// netlist file - u_aizu, d5_32e, schematic.
+ihnl/cds5/netlist
+// netlist file - u_aizu, RegFile, schematic.
+ihnl/cds6/netlist
+// netlist file - archi, ex04-2, schematic.
+ihnl/cds7/netlist
+
+
+// End HDL models

@@ -1,0 +1,31 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+
+reg  CK, CLR, WriteEN;
+
+wire [31:0]  ReadData1;
+wire [31:0]  ReadData2;
+
+reg [31:0]  WriteData;
+reg [4:0]  WriteReg;
+reg [4:0]  ReadReg2;
+reg [4:0]  ReadReg1;
+
+
+
+cdsModule_1 top(ReadData1, ReadData2, CK, CLR, ReadReg1, ReadReg2, 
+     WriteData, WriteEN, WriteReg); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/student/s1260054/CadenceComparch2020/ex04-2_run1/testfixture.verilog file
+`include "/home/student/s1260054/CadenceComparch2020/ex04-2_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

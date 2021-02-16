@@ -1,0 +1,36 @@
+// Verilog HDL and netlist files of
+// "archi ex04 schematic"
+
+// HDL models
+
+// HDL file - u_aizu, LookAheadGen, behavioral.
+/home/course/logictut/lib/u_aizu/LookAheadGen/behavioral/verilog.v
+
+
+// End HDL models
+
+// Netlisted models
+
+// netlist file - xc4000, m2_1, schematic.
+ihnl/cds0/netlist
+// netlist file - xc4000, m2_1e, schematic.
+ihnl/cds1/netlist
+// netlist file - xc4000, m4_1e, schematic.
+ihnl/cds2/netlist
+// netlist file - u_aizu, FA, schematic.
+ihnl/cds3/netlist
+// netlist file - u_aizu, CLA4, schematic.
+ihnl/cds4/netlist
+// netlist file - u_aizu, CLA32, schematic.
+ihnl/cds5/netlist
+// netlist file - xc4000, or8, schematic.
+ihnl/cds6/netlist
+// netlist file - u_aizu, zero_detect, schematic.
+ihnl/cds7/netlist
+// netlist file - u_aizu, ALU, schematic.
+ihnl/cds8/netlist
+// netlist file - archi, ex04, schematic.
+ihnl/cds9/netlist
+
+
+// End HDL models

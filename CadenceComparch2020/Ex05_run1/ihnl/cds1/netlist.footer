@@ -1,0 +1,5 @@
+or2  I_38 ( .i0(m1), .o(o), .i1(m0));
+and3  I_30 ( .i0(d1), .o(m1), .i2(s0), .i1(e));
+and3b1  I_31 ( .i0(s0), .i1(e), .i2(d0), .o(m0));
+
+endmodule

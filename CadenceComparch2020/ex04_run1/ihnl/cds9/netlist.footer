@@ -1,0 +1,3 @@
+ALU I7 ( S[31:0], Zero, A[31:0], ALUCode[3:0], B[31:0]);
+
+endmodule

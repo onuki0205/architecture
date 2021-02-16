@@ -1,0 +1,47 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 09/03/2019 21:35 (ip-172-18-22-89) $
+\o Sub version:		sub-version  s061 
+\o Arguments:		-unmapped -mpssession virtuoso24831 -mpshost cadsv192 
+\o Working Directory:	cadsv192:/home/student/s1260054/CadenceComparch2020
+\o 64-bit offsets
+\o Qt version: 		5.9.1
+\o changeWorkingDir("/home/student/s1260054/CadenceComparch2020") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/home/student/s1260054/CadenceComparch2020/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(253 113 602 491))
+\a cdsLibManager->libListBox->value = "archi"
+\a cdsLibManager->libLineEdit->value = "archi"
+\a cdsLibManager->cellListBox->value = "Ex06"
+\a cdsLibManager->cellLineEdit->value = "Ex06"
+\a cdsLibManager->cellListBox->value = "Ex05"
+\a cdsLibManager->cellLineEdit->value = "Ex05"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "archi"
+\a cdsLibManager->libLineEdit->value = "archi"
+\a cdsLibManager->cellListBox->value = "Ex05"
+\a cdsLibManager->cellLineEdit->value = "Ex05"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"

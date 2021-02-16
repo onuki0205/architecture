@@ -1,0 +1,20 @@
+// Library - xc4000, Cell - m16_1e, View - schematic
+// LAST TIME SAVED: Jan 25 14:57:00 2012
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module m16_1e ( o, d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11,
+     d12, d13, d14, d15, e, s0, s1, s2, s3 );
+
+output  o;
+
+input  d0, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14,
+     d15, e, s0, s1, s2, s3;
+
+
+specify 
+    specparam CDS_LIBNAME  = "xc4000";
+    specparam CDS_CELLNAME = "m16_1e";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

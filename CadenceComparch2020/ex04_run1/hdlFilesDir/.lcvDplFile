@@ -1,0 +1,38 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xgnd" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xvcc" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or2" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and2" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and2b1" libName "xc4000"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and3" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "and3b1" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "xor2" libName "xc4000"
+    ) 
+    (nil viewType "netlist" viewName "behavioral"
+    cellName "LookAheadGen" libName "u_aizu"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "nor4" libName "xc4000"
+    )
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or3" libName "xc4000"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "or4" libName "xc4000"
+    )
+)
+xxxInternalGlobAliasList = '(nil)

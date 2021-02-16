@@ -1,0 +1,40 @@
+CADENCE IHNL11140
+$model
+u_aizu/RegFile/schematic RegFile
+and3b1 and3b1
+xc4000/m16_1e/schematic m16_1e
+fdce fdce
+xor2 xor2
+xvcc xvcc
+or3 or3
+xc4000/m2_1e/schematic m2_1e
+xc4000/or8/schematic or8
+and5b2 and5b2
+xc4000/m4_1e/schematic m4_1e
+archi/Ex05/schematic Ex05
+u_aizu/d5_32e/schematic d5_32e
+u_aizu/CLA4/schematic CLA4
+u_aizu/m32_1/schematic m32_1
+and5b1 and5b1
+and3 and3
+or2 or2
+and2 and2
+xc4000/d4_16e/schematic d4_16e
+and5b3 and5b3
+inv inv
+u_aizu/FA/schematic FA
+xc4000/m2_1/schematic m2_1
+or4 or4
+xgnd xgnd
+u_aizu/ALU/schematic ALU
+nor4 nor4
+and5b4 and5b4
+and5 and5
+and2b1 and2b1
+u_aizu/zero_detect/schematic zero_detect
+u_aizu/CLA32/schematic CLA32
+$endmodel
+$net
+$endnet
+$param
+$endparam

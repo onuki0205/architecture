@@ -1,0 +1,23 @@
+xmvlog(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	19.03-s013: Started on Jun 04, 2020 at 15:46:49 JST
+xmvlog
+    -use5x
+    -SPECIFICUNIT Ex06
+    -zparse /tmp/vamsZparq20571
+    -NOWARN DLNOHV
+    -work archi
+    -view behavional
+    -nostdout
+    -logfile /home/student/s1260054/CadenceComparch2020/.cadence/dfII/TextSupport/Logs/Parser/verilog/archi/behavional/compile0.log
+    -messages
+    -cdslib /home/student/s1260054/CadenceComparch2020/cds.lib
+    /home/student/s1260054/CadenceComparch2020/archi/Ex06/behavional/verilog.v
+
+file: /home/student/s1260054/CadenceComparch2020/archi/Ex06/behavional/verilog.v
+endmodule
+        |
+xmvlog: *E,EXPLPA (/home/student/s1260054/CadenceComparch2020/archi/Ex06/behavional/verilog.v,41|8): expecting a left parenthesis ('(') [9.4(IEEE)].
+	module archi.Ex06:behavional
+		errors: 1, warnings: 0
+	 writing out DPL output:
+TOOL:	xmvlog(64)	19.03-s013: Exiting on Jun 04, 2020 at 15:46:49 JST  (total: 00:00:00)

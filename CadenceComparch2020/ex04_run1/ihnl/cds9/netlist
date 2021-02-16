@@ -1,0 +1,26 @@
+// Library - archi, Cell - ex04, View - schematic
+// LAST TIME SAVED: May 26 22:53:02 2020
+// NETLIST TIME: May 26 22:53:58 2020
+`timescale 1ns / 1ns 
+
+module ex04 ( S, Zero, A, ALUCode, B );
+
+output  Zero;
+
+
+output [31:0]  S;
+
+input [31:0]  A;
+input [3:0]  ALUCode;
+input [31:0]  B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "archi";
+    specparam CDS_CELLNAME = "ex04";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+ALU I7 ( S[31:0], Zero, A[31:0], ALUCode[3:0], B[31:0]);
+
+endmodule

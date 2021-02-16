@@ -1,0 +1,14 @@
+//
+// File created by:  xmxlmode
+// Do not modify this file
+//
+-YDIR
+/home/course/logictut/lib/xc4000/verilog
+-LIBEXT
+.v
+
+-neverwarn
+
+-nostdout
+
+-nocopyright

@@ -1,0 +1,10 @@
+CADENCE IHNL11148
+
+xc4000 m2_1e schematic cds0
+xc4000 m2_1 schematic cds1
+xc4000 m16_1e schematic cds2
+u_aizu m32_1 schematic cds3
+xc4000 d4_16e schematic cds4
+u_aizu d5_32e schematic cds5
+u_aizu RegFile schematic cds6
+archi ex04-2 schematic cds7

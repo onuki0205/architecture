@@ -1,0 +1,19 @@
+// Library - u_aizu, Cell - zero_detect, View - schematic
+// LAST TIME SAVED: Mar 27 10:54:12 2018
+// NETLIST TIME: Jun  5 11:25:52 2020
+`timescale 1ns / 1ns 
+
+module zero_detect ( Zero, A );
+
+output  Zero;
+
+
+input [31:0]  A;
+
+
+specify 
+    specparam CDS_LIBNAME  = "u_aizu";
+    specparam CDS_CELLNAME = "zero_detect";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
