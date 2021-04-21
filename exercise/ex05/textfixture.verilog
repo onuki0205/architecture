@@ -1,0 +1,65 @@
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+// Default verilog stimulus.
+
+initial
+begin
+
+// text segment
+Mem.cell['h00000000] = 32'h08000400;   // j 0x1000
+
+Mem.cell['h00001000] = 32'h00004025;   // or $8, $0, $0  ; 16: or  $8, $0, $0   # i = 0
+Mem.cell['h00001004] = 32'h8c0a5000;   // lw $10, 20480($0) [N]  ; 17: lw  $10, N  # la命令によりNの値を $10 に入れる。
+Mem.cell['h00001008] = 32'h340b5004;   // ori $11, $0, 20484 [A]  ; 18: la  $11, A  # la命令によりAのアドレスを $11 に入れる。実際は ori 命令に置き換わる。
+Mem.cell['h0000100c] = 32'h340c502c;   // ori $12, $0, 20524 [B]  ; 19: la  $12, B  # la命令によりBのアドレスを $12 に入れる。実際は ori 命令に置き換わる。
+Mem.cell['h00001010] = 32'h110a0006;   // beq $8, $10, 24 [loopend-0x00001010]; 21: beq  $8, $10, loopend	# i == n ならloopendへ
+Mem.cell['h00001014] = 32'h8d6d0000;   // lw $13, 0($11)  ; 22: lw   $13, 0($11)  # A[i]の値を $13 に入れる
+Mem.cell['h00001018] = 32'had8d0000;   // sw $13, 0($12)  ; 23: sw   $13, 0($12)  # メモリB[i]に対して A[i]の値 $13 を入れる
+Mem.cell['h0000101c] = 32'h21080001;   // addi $8, $8, 1  ; 24: addi $8, $8, 1  # i++
+Mem.cell['h00001020] = 32'h216b0004;   // addi $11, $11, 4  ; 25: addi $11, $11, 4  # 次のアドレスはAに４を足す
+Mem.cell['h00001024] = 32'h218c0004;   // addi $12, $12, 4  ; 26: addi $12, $12, 4  # 次のアドレスはBに４を足す
+Mem.cell['h00001028] = 32'h08000404;   // j 0x00001010 [loop]  ; 28: j loop
+Mem.cell['h0000102c] = 32'h0800040b;   // j 0x0000102c [exit]  ; 32: j exit
+
+// data segment
+Mem.cell['h00005000] = 32'h0000000a;
+Mem.cell['h00005004] = 32'h00000008;
+Mem.cell['h00005008] = 32'h00000004;
+Mem.cell['h0000500c] = 32'h00000007;
+Mem.cell['h00005010] = 32'h0000000c;
+Mem.cell['h00005014] = 32'h0000000d;
+Mem.cell['h00005018] = 32'h00000013;
+Mem.cell['h0000501c] = 32'h00000017;
+Mem.cell['h00005020] = 32'h0000002b;
+Mem.cell['h00005024] = 32'h00000038;
+Mem.cell['h00005028] = 32'h00000020;
+Mem.cell['h0000502c] = 32'h00000000;
+Mem.cell['h00005030] = 32'h00000000;
+Mem.cell['h00005034] = 32'h00000000;
+Mem.cell['h00005038] = 32'h00000000;
+Mem.cell['h0000503c] = 32'h00000000;
+Mem.cell['h00005040] = 32'h00000000;
+Mem.cell['h00005044] = 32'h00000000;
+Mem.cell['h00005048] = 32'h00000000;
+Mem.cell['h0000504c] = 32'h00000000;
+Mem.cell['h00005050] = 32'h00000000;
+
+  CK = 1'b1;
+  CLR = 1'b1;
+  #110
+  CLR = 1'b0;
+  #20000 // プログラム実行時間: 200サイクル
+  $display("A[0] = %d",Mem.cell['h502c]);
+  $display("A[1] = %d",Mem.cell['h5030]);
+  $display("A[2] = %d",Mem.cell['h5034]);
+  $display("A[3] = %d",Mem.cell['h5038]);
+  $display("A[4] = %d",Mem.cell['h503c]);
+  $display("A[5] = %d",Mem.cell['h5040]);
+  $display("A[6] = %d",Mem.cell['h5044]);
+  $display("A[7] = %d",Mem.cell['h5048]);
+  $display("A[8] = %d",Mem.cell['h504c]);
+  $display("A[9] = %d",Mem.cell['h5050]);
+  $finish;
+end
+always #50 CK = ~CK;

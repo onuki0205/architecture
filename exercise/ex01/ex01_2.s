@@ -1,15 +1,15 @@
         .data 
-N:      .word 10                        #配列の要素数
-A:      .word 8                         #A[0] = 8
-        .word 4                         #A[1] = 4
-        .word 7
+N:      .word 10                        #The length of Array
+A:      .word 9                         #A[0] = 9
+        .word 3                         #A[1] = 3
         .word 12
-        .word 13
-        .word 19
+        .word 7
+        .word 23
+        .word 1
         .word 23
         .word 43
-        .word 56                        #A[8] = 56
-        .word 32                        #A[9] = 32
+        .word 54                        #A[8] = 54
+        .word 31                        #A[9] = 31
 S:      .word 0
         .text
 main:

@@ -1,7 +1,7 @@
     .data
-A:  .word 19
-B:  .word 75
-C:  .word 10
+A:  .word 31
+B:  .word 53
+C:  .word 11
 S:  .word 0
     .text
 main:
